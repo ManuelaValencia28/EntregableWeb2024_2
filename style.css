@@ -59,6 +59,81 @@ h1 {
     margin-top: -5px;
 }
 
+.TextImagesH {
+    color: rgb(253, 253, 253);
+    font-family: 'Olibrick', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1%; 
+    text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
+    margin: 0px;
+}
+
+
+.TextImagesP {
+    color: rgb(253, 253, 253);
+    font-family: sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px; 
+    text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
+    margin: 0px;
+}
+
+#Selection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 20px;
+}
+
+#Menu{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Tittle{
+    text-align: center;
+}
+
+.TextMenuH {
+    color: rgb(253, 253, 253);
+    font-family: 'Olibrick', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px; 
+    text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
+}
+
+.TextTittleH{
+    color: rgb(253, 253, 253);
+    font-family: 'Olibrick', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 60px; 
+    text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
+}
+
+#Catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Imagenes{
+    padding: 10px;
+    text-align: left;
+}
+
+
+.Imagenes img {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 85%;
+    max-height: 85%;
+    border-radius: 10px;
+
+}
+
 label {
     font-family: fantasy;
     color: rgba(255, 255, 255, 0.8);
@@ -110,3 +185,38 @@ button:hover::before, button:hover::after {
 button:hover {
     box-shadow: inset 0px 0px 25px #ddeb3d;
 }
+
+
+@media(max-width: 768px){
+    
+    .TextImagesH {
+    font-size: 25px; 
+    }
+
+
+    .TextImagesP {
+    font-size: 18px; 
+    }
+    
+    .TextMenuH {
+    font-size: 25px; 
+    }
+}
+
+
+@media(max-width: 480px){
+    
+    .TextImagesH {
+    font-size: 20px; 
+    }
+
+
+    .TextImagesP {
+    font-size: 12px; 
+    }
+    
+    .TextMenuH {
+    font-size: 20px; 
+    }
+}
+

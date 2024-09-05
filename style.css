@@ -10,44 +10,24 @@ body {
     opacity: 0.90;
 }
 
-p{
-    font-family:fantasy;
+p {
+    font-family: fantasy;
     color: rgba(255, 255, 255, 0.8);
     font-size: 13px;
     letter-spacing: 2px;
     padding-left: 10px;
-  }
-
-  a{
-    color:#ddeb3d;
-    text-decoration: none;
-  }
-
-.registro {
-    border: 1px solid black;
-    width: 400px;
-    height: 650px; 
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(237, 236, 230, 0.75);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-
-    /* Flexbox para centrar el formulario */
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    margin: auto; /* Para centrar el contenedor en la pantalla */
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); /* Ajuste fino para centrar verticalmente */
 }
 
-.login {
+a {
+    color: #ddeb3d;
+    text-decoration: none;
+}
+
+.registro, .login {
     border: 1px solid black;
-    width: 400px;
-    height: 500px;
+    width: 90%; /* Ajustado para ser responsivo */
+    max-width: 400px; /* Límite máximo */
+    height: 650px; 
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(237, 236, 230, 0.75);
@@ -78,8 +58,6 @@ form {
     backdrop-filter: brightness(40%);
     gap: 5px;
     border-radius: 20px;
-    
-   
 }
 
 h1 {
@@ -98,11 +76,10 @@ h1 {
     font-family: 'Olibrick', sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 1%; 
+    font-size: 25px; 
     text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
     margin: 0px;
 }
-
 
 .TextImagesP {
     color: rgb(253, 253, 253);
@@ -114,18 +91,18 @@ h1 {
     margin: 0px;
 }
 
-#Selection{
+#Selection {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 20px;
 }
 
-#Menu{
+#Menu {
     text-align: center;
     margin-top: 20px;
 }
 
-#Tittle{
+#Tittle {
     text-align: center;
 }
 
@@ -134,11 +111,11 @@ h1 {
     font-family: 'Olibrick', sans-serif;
     font-weight: 200;
     font-style: normal;
-    font-size: 20px; 
+    font-size: 25px; 
     text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
 }
 
-.TextTittleH{
+.TextTittleH {
     color: rgb(253, 253, 253);
     font-family: 'Olibrick', sans-serif;
     font-weight: 200;
@@ -147,17 +124,16 @@ h1 {
     text-shadow: 0px 20px 30px rgba(241, 239, 111, 5);
 }
 
-#Catalogo{
+#Catalogo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.Imagenes{
+.Imagenes {
     padding: 10px;
     text-align: left;
 }
-
 
 .Imagenes img {
     min-width: 100%;
@@ -165,14 +141,12 @@ h1 {
     min-height: 85%;
     max-height: 85%;
     border-radius: 10px;
-
 }
 
 label {
     font-family: fantasy;
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
-    font-size: px;
     letter-spacing: 2px;
     padding-left: 10px;
 }
@@ -220,54 +194,39 @@ button:hover {
     box-shadow: inset 0px 0px 25px #ddeb3d;
 }
 
-
-@media(min-width: 768px){
-    
-    .TextImagesH {
-    font-size: 25px; 
+/* Media Queries para dispositivos medianos */
+@media (max-width: 758px) {
+    .registro, .login {
+        width: 30%; /* Ajuste del ancho para pantallas medianas */
+        height: auto; /* Permite que el contenedor se adapte */
     }
 
-
-    .TextImagesP {
-    font-size: 18px; 
-    }
-    
-    .TextMenuH {
-    font-size: 25px; 
-    }
-}
-
-
-@media(max-width: 768px){
-    
-    .TextImagesH {
-    font-size: 25px; 
+    .TextImagesH, .TextMenuH {
+        font-size: 22px; /* Ajusta las tipografías para pantallas medianas */
     }
 
-
-    .TextImagesP {
-    font-size: 18px; 
-    }
-    
-    .TextMenuH {
-    font-size: 25px; 
+    h1 {
+        font-size: 50px; /* Reducir el tamaño del h1 */
     }
 }
 
-
-@media(max-width: 480px){
-    
-    .TextImagesH {
-    font-size: 20px; 
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 400px) {
+    .registro, .login {
+        width: 80%; /* Ajuste del ancho para pantallas pequeñas */
+        height: auto; /* Permite que el contenedor se adapte */
+        padding: 10px; /* Ajuste del padding */
     }
 
+    .TextImagesH, .TextMenuH {
+        font-size: 20px; /* Ajusta las tipografías para pantallas pequeñas */
+    }
 
     .TextImagesP {
-    font-size: 12px; 
+        font-size: 12px; 
     }
-    
-    .TextMenuH {
-    font-size: 20px; 
+
+    h1 {
+        font-size: 40px;
     }
 }
-

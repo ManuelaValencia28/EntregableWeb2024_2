@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('imagenes/nike-kobe-krossovok.jpg');
+    background-image: url('/imagenes/nike-kobe-krossovok.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ input::placeholder {
 }
 
 button {
-    width: 10em; /* Ajustado para ocupar todo el ancho del formulario */
+    width: 70%; /* Ajustado para ocupar todo el ancho del formulario */
     height: 2.5em;
     border: 2px ridge #d4f092;
     outline: none;
